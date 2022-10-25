@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
+        
         forward = Camera.main.transform.forward;
         forward.y = 0;
         forward = Vector3.Normalize(forward);
