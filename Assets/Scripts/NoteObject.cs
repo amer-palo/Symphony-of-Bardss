@@ -1,3 +1,4 @@
+using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class NoteObject : MonoBehaviour
     public bool canBePressed;
 
     public KeyCode keyToPress;
+    private bool obtained = false;
+
     void Start()
     {
         
@@ -19,7 +22,11 @@ public class NoteObject : MonoBehaviour
         {
             if(canBePressed)
             {
+                obtained = true;
                 gameObject.SetActive(false);
+
+                RhythmManager.instance.NoteHit();
+                obtained = true;
             }
         }
     }
@@ -37,6 +44,13 @@ public class NoteObject : MonoBehaviour
         if (other.tag == "Activator")
         {
             canBePressed = false;
+            if (!obtained)
+            {
+                RhythmManager.instance.NoteMissed();
+            }
+
+            
         }
     }
+
 }
