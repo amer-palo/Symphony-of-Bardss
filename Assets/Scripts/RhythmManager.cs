@@ -26,12 +26,20 @@ public class RhythmManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiText;
 
+    public float totalNotes;
+    public float notesHit;
+    public float notesMissed;
+
+    public GameObject resultsScreen;
+    public TextMeshProUGUI percentHitText,notesHitText, notesMissedText, rankText, finalScoreText;
+
     void Start ()
     {
         instance = this;
 
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
+        totalNotes = FindObjectsOfType<NoteObject>().Length;
     }
     void Update ()
     {
@@ -44,7 +52,60 @@ public class RhythmManager : MonoBehaviour
                 
                 theMusic.Play();    
             }
+
         }
+          else
+          {
+               if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+               {
+                resultsScreen.SetActive(true);
+
+                notesHitText.text = "" + notesHit;
+                notesMissedText.text = "" + notesMissed;
+
+                float totalHit = notesHit;
+                float percentHit = (totalHit / totalNotes) * 100f;
+
+                percentHitText.text = percentHit.ToString("F1") + "%";
+
+                string rankVal = "F";
+
+                 if(percentHit > 40)
+                 {
+                    rankVal = "D";
+
+                    if(percentHit > 55)
+                    {
+                        rankVal = "C";
+
+                        if(percentHit > 70)
+                        {
+                            rankVal = "B";
+
+                             if(percentHit > 85)
+                             {
+
+                              rankVal = "A";
+
+                              if(percentHit > 95)
+                              {
+                                  rankVal = "S";
+                              }
+
+                             }    
+
+                        }
+                    }
+                 }
+
+                rankText.text = rankVal;
+
+                finalScoreText.text = currentScore.ToString();
+               
+               }
+                
+          }
+        
     }
 
     public void NoteHit()
@@ -66,6 +127,8 @@ public class RhythmManager : MonoBehaviour
 
         currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
+
+        notesHit++;
     }
 
     public void NoteMissed()
@@ -76,5 +139,7 @@ public class RhythmManager : MonoBehaviour
         multiplierTracker = 0;
 
         multiText.text = "Multiplier x" + currentMultiplier;
+
+        notesMissed++;
     }
 }
