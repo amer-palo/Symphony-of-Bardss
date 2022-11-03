@@ -45,3 +45,9 @@ TagManager:
   - name: Arrows
     uniqueID: 5674937
     locked: 0
+  - name: Player
+    uniqueID: 2629962079
+    locked: 0
+  - name: Water
+    uniqueID: 1699883779
+    locked: 0

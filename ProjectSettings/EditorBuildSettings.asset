@@ -4,6 +4,12 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Symphony of Bards.unity
+    guid: 356ef55312f51cb45a261a0ec02f5c36
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: d777ebdde8b79c5488d3193f87cffaf1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ea68e328b9896345b249167d5c7c22b, type: 2}
