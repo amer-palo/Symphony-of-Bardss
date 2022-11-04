@@ -29,6 +29,13 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource a in audios)
+        {
+            a.Play();
+        }
     }
 
     void Pause()
@@ -36,6 +43,14 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+        /*foreach (AudioSource a in audios)
+        {
+            a.Pause();
+        }
+        */
     }
 
     public void LoadMenu()
