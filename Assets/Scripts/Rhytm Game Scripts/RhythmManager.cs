@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class RhythmManager : MonoBehaviour
 {
@@ -141,5 +142,10 @@ public class RhythmManager : MonoBehaviour
         multiText.text = "Multiplier x" + currentMultiplier;
 
         notesMissed++;
+    }
+
+    public void LoadTavern()
+    {
+        SceneManager.LoadScene("Tavern");
     }
 }
