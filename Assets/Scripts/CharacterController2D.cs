@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
 {
+    [SerializeField] Sprite newSprite;
+    [SerializeField] Sprite newSprite2;
+    [SerializeField] Sprite newSprite3;
+    [SerializeField] Sprite newSprite4;
+    [SerializeField] Sprite newSprite5;
+
+    SpriteRenderer myspriteRenderer;
 
     private const float MOVE_SPEED = 5f;
 
@@ -14,6 +21,10 @@ public class CharacterController2D : MonoBehaviour
     private Vector3 moveDir;
     private bool isDashButtonDown;
 
+    void Start()
+    {
+        myspriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+    }
     private void Awake()
     {
         
@@ -28,18 +39,26 @@ public class CharacterController2D : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             moveY = +1f;
+            myspriteRenderer.sprite = newSprite3;
         }
         if (Input.GetKey(KeyCode.S))
         {
             moveY = -1f;
+            myspriteRenderer.sprite = newSprite4;
         }
         if (Input.GetKey(KeyCode.A))
         {
             moveX = -1f;
+            myspriteRenderer.sprite = newSprite;
         }
         if (Input.GetKey(KeyCode.D))
         {
             moveX = +1f;
+            myspriteRenderer.sprite = newSprite2;
+        }
+        if (Input.GetKey(KeyCode.None))
+        {
+            myspriteRenderer.sprite = newSprite5;
         }
 
         moveDir = new Vector3(moveX, moveY).normalized;
@@ -71,6 +90,5 @@ public class CharacterController2D : MonoBehaviour
             rigidbody2D.MovePosition(dashPosition);
             isDashButtonDown = false;
         }
-    }
-
+    } 
 }
