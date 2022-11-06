@@ -54,3 +54,6 @@ TagManager:
   - name: Water
     uniqueID: 1699883779
     locked: 0
+  - name: Front
+    uniqueID: 1819210039
+    locked: 0
