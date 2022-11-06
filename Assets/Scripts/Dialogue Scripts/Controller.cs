@@ -72,6 +72,10 @@ public class Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            return;
+        }
         rigidbody2D.velocity = moveDir * MOVE_SPEED;
 
         if (isDashButtonDown)
