@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum PlayerState { PLay, Talk, Other}
 public class CharacterController2D : MonoBehaviour
 {
     [SerializeField] Sprite newSprite;
@@ -21,6 +23,8 @@ public class CharacterController2D : MonoBehaviour
     private Vector3 moveDir;
     private bool isDashButtonDown;
 
+    public PlayerState playerState;
+
     void Start()
     {
         myspriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -35,42 +39,44 @@ public class CharacterController2D : MonoBehaviour
     {
         float moveX = 0f;
         float moveY = 0f;
+        if (playerState == PlayerState.PLay)
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                moveY = +1f;
+                myspriteRenderer.sprite = newSprite3;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                moveY = -1f;
+                myspriteRenderer.sprite = newSprite4;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                moveX = -1f;
+                myspriteRenderer.sprite = newSprite;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                moveX = +1f;
+                myspriteRenderer.sprite = newSprite2;
+            }
+            if (Input.GetKey(KeyCode.None))
+            {
+                myspriteRenderer.sprite = newSprite5;
+            }
 
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveY = +1f;
-            myspriteRenderer.sprite = newSprite3;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveY = -1f;
-            myspriteRenderer.sprite = newSprite4;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            moveX = -1f;
-            myspriteRenderer.sprite = newSprite;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            moveX = +1f;
-            myspriteRenderer.sprite = newSprite2;
-        }
-        if (Input.GetKey(KeyCode.None))
-        {
-            myspriteRenderer.sprite = newSprite5;
-        }
+            moveDir = new Vector3(moveX, moveY).normalized;
 
-        moveDir = new Vector3(moveX, moveY).normalized;
-       
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            isDashButtonDown = true;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isDashButtonDown = true;
+            }
         }
     }
 
-    private void FixedUpdate()
+   /* private void FixedUpdate()
     {
         rigidbody2D.velocity = moveDir * MOVE_SPEED;
 
@@ -90,5 +96,7 @@ public class CharacterController2D : MonoBehaviour
             rigidbody2D.MovePosition(dashPosition);
             isDashButtonDown = false;
         }
-    } 
+    } */
+
+    
 }
