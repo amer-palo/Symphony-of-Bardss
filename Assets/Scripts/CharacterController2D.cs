@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum PlayerState { PLay, Talk, Other}
+public enum PlayerState { Play, Talk, Other}
 public class CharacterController2D : MonoBehaviour
 {
     [SerializeField] Sprite newSprite;
@@ -39,7 +39,7 @@ public class CharacterController2D : MonoBehaviour
     {
         float moveX = 0f;
         float moveY = 0f;
-        if (playerState == PlayerState.PLay)
+        if (playerState == PlayerState.Play)
         {
             if (Input.GetKey(KeyCode.W))
             {
@@ -73,14 +73,15 @@ public class CharacterController2D : MonoBehaviour
             {
                 isDashButtonDown = true;
             }
+
         }
     }
 
-   /* private void FixedUpdate()
+    private void FixedUpdate()
     {
         rigidbody2D.velocity = moveDir * MOVE_SPEED;
 
-        if (isDashButtonDown)
+       /* if (isDashButtonDown)
         {
             float dashAmount = 1f;
             Vector3 dashPosition = transform.position + moveDir * dashAmount;
@@ -95,8 +96,8 @@ public class CharacterController2D : MonoBehaviour
 
             rigidbody2D.MovePosition(dashPosition);
             isDashButtonDown = false;
-        }
-    } */
+        }*/
+    } 
 
     
 }
