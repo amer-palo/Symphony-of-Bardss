@@ -12,6 +12,8 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] Sprite newSprite4;
     [SerializeField] Sprite newSprite5;
 
+    [SerializeField] Transform hand;
+
     SpriteRenderer myspriteRenderer;
 
     private const float MOVE_SPEED = 5f;
@@ -75,8 +77,13 @@ public class CharacterController2D : MonoBehaviour
             }
 
         }
+        RotateHand();
     }
-
+    void RotateHand()
+    {
+        float angle = Utility.AngleTowardsMouse(hand.position);
+        hand.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+    }
     private void FixedUpdate()
     {
         rigidbody2D.velocity = moveDir * MOVE_SPEED;
