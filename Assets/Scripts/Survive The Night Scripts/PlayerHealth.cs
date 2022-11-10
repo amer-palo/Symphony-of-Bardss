@@ -27,8 +27,14 @@ public class PlayerHealth : MonoBehaviour
         {
             health = 0f;
             healthSlider.value = health;
-            Destroy(gameObject);
+            PlayerDied();
         }
+    }
+
+    private void PlayerDied()
+    {
+        LevelManager.instance.GameOver();
+        gameObject.SetActive(false);
     }
 
     private void OnGUI()
