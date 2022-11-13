@@ -12,6 +12,7 @@ public class StateManager : MonoBehaviour
 
     public void ChangeSceneByName(string name)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Tavern");
     }
     

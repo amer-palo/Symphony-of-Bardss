@@ -18,6 +18,8 @@ public class WaveSystem : MonoBehaviour
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
+    public GameObject winUI;
+    public GameObject player;
 
     private bool canSpawn = true;
 
@@ -27,12 +29,19 @@ public class WaveSystem : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
+        if (totalEnemies.Length == 0)
         {
-            currentWaveNumber++;
-            canSpawn = true;
-        }
+            if (currentWaveNumber + 1 != waves.Length)
+            {
+                SpawnNextWave();
+            }
 
+            else
+            {
+                winUI.SetActive(true);
+                player.SetActive(false);
+            }
+        }
     }
 
     void SpawnNextWave()
