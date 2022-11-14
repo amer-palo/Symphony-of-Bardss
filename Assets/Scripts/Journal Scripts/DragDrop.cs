@@ -17,7 +17,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     public void OnBeginDrag (PointerEventData eventData)
