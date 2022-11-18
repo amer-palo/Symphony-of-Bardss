@@ -10,6 +10,7 @@ public class RhythmManager : MonoBehaviour
 {
     public AudioSource theMusic;
     public AudioSource audioBehaviour;
+    public AudioSource failedHit;
     public bool startPlaying;
 
     public BeatScroller theBS;
@@ -138,6 +139,8 @@ public class RhythmManager : MonoBehaviour
     public void NoteMissed()
     {
         Debug.Log("Missed Note");
+        failedHit.time = 0.5f;
+        failedHit.Play();
 
         currentMultiplier = 1;
         multiplierTracker = 0;
