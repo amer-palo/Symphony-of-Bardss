@@ -5,7 +5,9 @@ using UnityEngine;
 public class BeatScroller : MonoBehaviour
 {
     public float beatTempo;
+    public float speed;
 
+    bool switc = true;
     public bool hasStarted;
     void Start()
     {
@@ -24,8 +26,35 @@ public class BeatScroller : MonoBehaviour
         }
         else
         {
-            transform.position -= new Vector3(-beatTempo * Time.deltaTime, 0f , 0f);
+         if(switc)
+         {
+                moveblockright();
+         }
+         if(!switc)
+            {
+                moveblockleft();
+            }
+
+         if(transform.position.x >= 4.26f)
+            {
+                switc = false;
+            }
+         if(transform.position.x <= 0)
+            {
+                switc=true;
+            }
+            //transform.position -= new Vector3(-beatTempo * Time.deltaTime, 0f , 0f);
         }
 
+    }
+    
+    void moveblockright()
+    {
+        transform.Translate(speed * Time.deltaTime, 0, 0);
+    }
+
+    void moveblockleft()
+    {
+        transform.Translate(-speed * Time.deltaTime, 0, 0);
     }
 }

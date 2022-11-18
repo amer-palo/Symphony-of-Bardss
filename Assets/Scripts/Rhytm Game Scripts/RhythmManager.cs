@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class RhythmManager : MonoBehaviour
 {
     public AudioSource theMusic;
-
+    public AudioSource audioBehaviour;
     public bool startPlaying;
 
     public BeatScroller theBS;
@@ -112,6 +113,8 @@ public class RhythmManager : MonoBehaviour
     public void NoteHit()
     {
         Debug.Log("Hit On Time");
+        audioBehaviour.time = 0.5f;
+        audioBehaviour.Play();
 
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
