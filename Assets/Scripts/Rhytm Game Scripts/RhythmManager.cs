@@ -8,6 +8,8 @@ using DG.Tweening;
 
 public class RhythmManager : MonoBehaviour
 {
+    public AudioClip[] clips;
+    private AudioSource audioSource;
     public AudioSource theMusic;
     public AudioSource audioBehaviour;
     public AudioSource failedHit;
@@ -20,7 +22,7 @@ public class RhythmManager : MonoBehaviour
     public int currentScore;
     public int scorePerNote = 100;
 
-   
+
     public int currentMultiplier;
     public int multiplierTracker;
     public int[] multiplierThresholds;
@@ -34,33 +36,37 @@ public class RhythmManager : MonoBehaviour
     public float notesMissed;
 
     public GameObject resultsScreen;
-    public TextMeshProUGUI percentHitText,notesHitText, notesMissedText, rankText, finalScoreText;
+    public TextMeshProUGUI percentHitText, notesHitText, notesMissedText, rankText, finalScoreText;
 
-    void Start ()
+    void Start()
     {
+        audioSource = FindObjectOfType<AudioSource>();
+        audioSource.loop = false;
         instance = this;
 
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
         totalNotes = FindObjectsOfType<NoteObject>().Length;
+
+
     }
-    void Update ()
+    void Update()
     {
-        if(!startPlaying)
+        if (!startPlaying)
         {
-           
-            
-                startPlaying = true;
-                theBS.hasStarted = true;
-                
-                theMusic.Play();    
-            
+
+
+            startPlaying = true;
+            theBS.hasStarted = true;
+
+            theMusic.Play();
+
 
         }
-          else
-          {
-               if(!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
-               {
+        else
+        {
+            if (!theMusic.isPlaying && !resultsScreen.activeInHierarchy)
+            {
                 resultsScreen.SetActive(true);
 
                 notesHitText.text = "" + notesHit;
@@ -73,49 +79,55 @@ public class RhythmManager : MonoBehaviour
 
                 string rankVal = "F";
 
-                 if(percentHit > 40)
-                 {
+                if (percentHit > 40)
+                {
                     rankVal = "D";
 
-                    if(percentHit > 55)
+                    if (percentHit > 55)
                     {
                         rankVal = "C";
 
-                        if(percentHit > 70)
+                        if (percentHit > 70)
                         {
                             rankVal = "B";
 
-                             if(percentHit > 85)
-                             {
+                            if (percentHit > 85)
+                            {
 
-                              rankVal = "A";
+                                rankVal = "A";
 
-                              if(percentHit > 95)
-                              {
-                                  rankVal = "S";
-                              }
+                                if (percentHit > 95)
+                                {
+                                    rankVal = "S";
+                                }
 
-                             }    
+                            }
 
                         }
                     }
-                 }
+                }
 
                 rankText.text = rankVal;
 
                 finalScoreText.text = currentScore.ToString();
-               
-               }
-                
-          }
+
+            }
+
+        }
+
         
+
     }
+
 
     public void NoteHit()
     {
         Debug.Log("Hit On Time");
-        audioBehaviour.time = 0.5f;
-        audioBehaviour.Play();
+        //audioBehaviour.time = 0.5f;
+        //GetRandomClip();
+        audioSource.clip = GetRandomClip();
+        audioSource.Play();
+
 
         if (currentMultiplier - 1 < multiplierThresholds.Length)
         {
@@ -153,5 +165,10 @@ public class RhythmManager : MonoBehaviour
     public void LoadTavern()
     {
         SceneManager.LoadScene("Tavern");
+    }
+
+    private AudioClip GetRandomClip()
+    {
+        return clips[Random.Range(0,clips.Length)];
     }
 }

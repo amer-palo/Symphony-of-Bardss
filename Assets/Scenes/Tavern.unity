@@ -1320,7 +1320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624611028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.1, y: -2.32, z: 0.6063356}
+  m_LocalPosition: {x: -29.1, y: -1.05, z: 0.6063356}
   m_LocalScale: {x: 5.336296, y: 2.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2900,8 +2900,8 @@ MonoBehaviour:
     -
     Your final score will be dictated based on how much notes you hit correctly
 
-    -
-    Press any key to start the Rhythm game after you press continue'
+    -The
+    game will start as soon as you press continue! Be ready!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
