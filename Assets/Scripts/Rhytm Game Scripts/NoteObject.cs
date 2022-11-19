@@ -47,6 +47,7 @@ public class NoteObject : MonoBehaviour
             if (!obtained)
             {
                 RhythmManager.instance.NoteMissed();
+                Destroy(gameObject);
             }
 
             

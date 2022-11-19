@@ -35,11 +35,11 @@ public class BeatScroller : MonoBehaviour
                 moveblockleft();
             }
 
-         if(transform.position.x >= 4.26f)
+         if(transform.position.x >= 4.52f)
             {
                 switc = false;
             }
-         if(transform.position.x <= 0)
+         if(transform.position.x <= -0.42f)
             {
                 switc=true;
             }

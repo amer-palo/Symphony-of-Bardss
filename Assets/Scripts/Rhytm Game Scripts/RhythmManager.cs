@@ -48,13 +48,13 @@ public class RhythmManager : MonoBehaviour
     {
         if(!startPlaying)
         {
-            if(Input.anyKeyDown)
-            {
+           
+            
                 startPlaying = true;
                 theBS.hasStarted = true;
                 
                 theMusic.Play();    
-            }
+            
 
         }
           else
