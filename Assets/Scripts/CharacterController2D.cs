@@ -27,6 +27,7 @@ public class CharacterController2D : MonoBehaviour
 
     public PlayerState playerState;
 
+
     void Start()
     {
         myspriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -83,6 +84,11 @@ public class CharacterController2D : MonoBehaviour
     {
         float angle = Utility.AngleTowardsMouse(hand.position);
         hand.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+    }
+    public void ChangePlayerState(PlayerState state)
+    {
+        playerState = state;
+        Debug.Log("PlayerState = " + playerState);
     }
     private void FixedUpdate()
     {

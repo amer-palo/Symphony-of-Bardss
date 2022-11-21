@@ -26,6 +26,12 @@ public class DialogueManager : MonoBehaviour
 
     private static DialogueManager instance;
 
+    //needed for freezing player
+    public GameObject player;
+    public Rigidbody2D rB;
+    //public PlayerState state;
+
+    public CharacterController2D characterController;
 
     private void Awake()
     {
@@ -40,6 +46,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        rB = player.GetComponent<Rigidbody2D>();
+        
 
         //get the choices
         choicesText = new TextMeshProUGUI[choices.Length];
@@ -49,6 +57,8 @@ public class DialogueManager : MonoBehaviour
             choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
         }
+
+        
     }
     private void Update()
     {
@@ -74,7 +84,9 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
-        
+        //Freezes the Player and changes player state to talk
+        rB.constraints = RigidbodyConstraints2D.FreezeAll;
+        characterController.ChangePlayerState(PlayerState.Talk);
 
         ContinueStory();
     }
@@ -97,6 +109,9 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
+        //Unfreezes the player and changes the player state to play
+        rB.constraints = RigidbodyConstraints2D.None;
+        characterController.ChangePlayerState(PlayerState.Play);
     }
     
     private void DisplayChoices()
@@ -138,4 +153,7 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
     }
+
+ 
+   
 }
