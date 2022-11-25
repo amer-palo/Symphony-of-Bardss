@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class DrinkPiece : MonoBehaviour
 {
+    [SerializeField] private SpriteRenderer _renderer;
     private bool _dragging;
 
     private Vector2 _offset, _originalPosition;
+
+    private DrinkSlot _slot;
+
+    public void Init(DrinkSlot slot)
+    {
+        _renderer.sprite = slot.Renderr.sprite;
+        _slot = slot;
+    }
 
 
     void Awake()
