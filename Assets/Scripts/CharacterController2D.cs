@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 public enum PlayerState { Play, Talk, Other}
+public enum Direction { Up, Down, Left, Right}
 public class CharacterController2D : MonoBehaviour
 {
     [SerializeField] Sprite newSprite;
@@ -12,7 +13,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] Sprite newSprite4;
     [SerializeField] Sprite newSprite5;
 
-    [SerializeField] Transform hand;
+    //[SerializeField] Transform hand;
 
     SpriteRenderer myspriteRenderer;
 
@@ -26,6 +27,7 @@ public class CharacterController2D : MonoBehaviour
     private bool isDashButtonDown;
 
     public PlayerState playerState;
+    public Direction direction;
 
 
     void Start()
@@ -48,21 +50,25 @@ public class CharacterController2D : MonoBehaviour
             {
                 moveY = +1f;
                 myspriteRenderer.sprite = newSprite3;
+                direction = Direction.Up;
             }
             if (Input.GetKey(KeyCode.S))
             {
                 moveY = -1f;
                 myspriteRenderer.sprite = newSprite4;
+                direction = Direction.Down;
             }
             if (Input.GetKey(KeyCode.A))
             {
                 moveX = -1f;
                 myspriteRenderer.sprite = newSprite;
+                direction = Direction.Left;
             }
             if (Input.GetKey(KeyCode.D))
             {
                 moveX = +1f;
                 myspriteRenderer.sprite = newSprite2;
+                direction = Direction.Right;
             }
             if (Input.GetKey(KeyCode.None))
             {
@@ -78,13 +84,13 @@ public class CharacterController2D : MonoBehaviour
             }
 
         }
-        RotateHand();
+        //RotateHand();
     }
-    void RotateHand()
+   /* void RotateHand()
     {
         float angle = Utility.AngleTowardsMouse(hand.position);
         hand.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-    }
+    }*/
     public void ChangePlayerState(PlayerState state)
     {
         playerState = state;
