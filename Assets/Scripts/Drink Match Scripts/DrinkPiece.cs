@@ -5,7 +5,7 @@ using UnityEngine;
 public class DrinkPiece : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer _renderer;
-    private bool _dragging;
+    private bool _dragging, _placed;
 
     private Vector2 _offset, _originalPosition;
 
@@ -24,6 +24,7 @@ public class DrinkPiece : MonoBehaviour
     }    
     void Update()
     {
+        if (_placed) return;
         if (!_dragging) return;
 
         var mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -39,8 +40,19 @@ public class DrinkPiece : MonoBehaviour
 
     void OnMouseUp()
     {
-        transform.position = _originalPosition;
-        _dragging = false;  
+        if(Vector2.Distance(transform.position,_slot.transform.position) < 3)
+        {
+            transform.position = _slot.transform.position;
+            _slot.Placed();
+            _placed = true;
+            
+
+        }
+        else
+        {
+            transform.position = _originalPosition;
+            _dragging = false;  
+        }
     }
 
     Vector2 GetMousePos()
