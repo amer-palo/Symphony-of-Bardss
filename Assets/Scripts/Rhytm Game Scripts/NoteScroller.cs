@@ -7,6 +7,7 @@ public class NoteScroller : MonoBehaviour
     public float beatTempo;
    
     public bool hasStarted;
+
     void Start()
     {
         beatTempo = beatTempo / 60f;
