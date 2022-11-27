@@ -9,9 +9,14 @@ public class BeatScroller : MonoBehaviour
 
     bool switc = true;
     public bool hasStarted;
+
+    Vector2 holderPos;
+    public GameObject holder;
     void Start()
     {
         beatTempo = beatTempo / 60f;
+        
+        holderPos = holder.transform.position;
     }
 
     // Update is called once per frame
@@ -31,18 +36,18 @@ public class BeatScroller : MonoBehaviour
                 moveblockright();
          }
          if(!switc)
-            {
+         {
                 moveblockleft();
-            }
+         }
 
-         if(transform.position.x >= 4.52f)
-            {
+         if(transform.position.x >= -3.451408f)
+         {
                 switc = false;
-            }
-         if(transform.position.x <= -0.42f)
-            {
+         }
+         if(transform.position.x <= -3.451408f)
+         {
                 switc=true;
-            }
+         }
             //transform.position -= new Vector3(-beatTempo * Time.deltaTime, 0f , 0f);
         }
 
@@ -55,6 +60,8 @@ public class BeatScroller : MonoBehaviour
 
     void moveblockleft()
     {
-        transform.Translate(-speed * Time.deltaTime, 0, 0);
+        
+        holder.transform.position = holderPos;
+        
     }
 }
