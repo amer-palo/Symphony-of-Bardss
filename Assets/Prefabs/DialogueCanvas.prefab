@@ -822,8 +822,8 @@ MonoBehaviour:
     it all by himself too, and let me tell you his Dad was not happy about it. wanted
     him to take over his farm like I did, but nope Jeff went '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3fee40687dfc77643aed3bafa1bb76bd, type: 2}
+  m_sharedMaterial: {fileID: -5542389230351133998, guid: 3fee40687dfc77643aed3bafa1bb76bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 88.534904, y: 27.476341, z: 442.67432, w: -3.0529022}
+  m_margin: {x: 88.534904, y: 27.476341, z: 442.67432, w: -47.564407}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
