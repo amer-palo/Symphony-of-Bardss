@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject questionsPanel;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
 
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour
 
     //needed for freezing player
     public GameObject player;
+    public GameObject NPC;
     public Rigidbody2D rB;
     //public PlayerState state;
 
@@ -46,6 +48,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        questionsPanel.SetActive(false);
         rB = player.GetComponent<Rigidbody2D>();
         
 
@@ -83,6 +86,9 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+        questionsPanel.SetActive(true);
+        NPC.SetActive(true);
+        
 
         //Freezes the Player and changes player state to talk
         rB.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -108,10 +114,14 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        questionsPanel.SetActive(false);
         dialogueText.text = "";
         //Unfreezes the player and changes the player state to play
         rB.constraints = RigidbodyConstraints2D.None;
+        rB.constraints = RigidbodyConstraints2D.FreezeRotation;
         characterController.ChangePlayerState(PlayerState.Play);
+
+        NPC.SetActive(false);
     }
     
     private void DisplayChoices()

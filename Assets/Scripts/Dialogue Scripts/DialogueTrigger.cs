@@ -12,10 +12,15 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    [SerializeField] private GameObject character;
+    
+
     private void Awake()
     {
         playerInRange = false;
         visualCue.SetActive(false);
+        character.SetActive(false);
+        
     }
 
     private void Update()
@@ -25,11 +30,15 @@ public class DialogueTrigger : MonoBehaviour
             visualCue.SetActive(true);
             if (InputManager.GetInstance().GetInteractPressed())
             {
+                DialogueManager.GetInstance().NPC = character;
+                
+                Debug.Log("character Active");
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }
         else
             visualCue.SetActive(false);
+            
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,4 +57,5 @@ public class DialogueTrigger : MonoBehaviour
             playerInRange = false;
         }
     }
+   
 }

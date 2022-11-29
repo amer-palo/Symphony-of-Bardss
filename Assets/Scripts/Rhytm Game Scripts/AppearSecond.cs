@@ -32,7 +32,7 @@ public class AppearSecond : MonoBehaviour
 
     IEnumerator WaitBeforeShowing()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5.3f);
 
         arrowFive5.SetActive(true);
         arrowOne1.SetActive(true);
