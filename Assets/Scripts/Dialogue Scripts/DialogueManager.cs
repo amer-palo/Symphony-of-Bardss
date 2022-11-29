@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject questionsPanel;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI displayName;
 
 
 
@@ -26,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     public bool dialogueIsPlaying { get; private set; }
 
     private static DialogueManager instance;
+
+    private const string SPEAKER_TAG = "speaker";
 
     //needed for freezing player
     public GameObject player;
@@ -103,6 +106,8 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text = currentStory.Continue();
 
             DisplayChoices();
+
+            HandleTags(currentStory.currentTags);
         }
         else
         {
@@ -164,6 +169,32 @@ public class DialogueManager : MonoBehaviour
         currentStory.ChooseChoiceIndex(choiceIndex);
     }
 
- 
+    public void HandleTags(List<string> currentTags)
+    {
+        //parse the tag
+        foreach (string tag in currentTags)
+        {
+            string[] splitTag = tag.Split(':');
+            if (splitTag.Length != 2)
+            {
+                Debug.LogError("Tag could not be appropriatly parsed:" + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
+
+
+            switch (tagKey)
+            {
+                case SPEAKER_TAG:
+                    displayName.text = tagValue;
+                    Debug.Log("speaker =" + tagValue);
+                    break;
+
+                default:
+                    Debug.LogWarning("Tag came in but is not currently being handled:" + tag);
+                    break;
+            }
+        }
+    }
    
 }
