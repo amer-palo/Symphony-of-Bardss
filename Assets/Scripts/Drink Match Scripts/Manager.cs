@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject bottlePieceOne, bottlePieceTwo, bottlePieceThree, bottleSlotOne, bottleSlotTwo, bottleSlotThree;
+    public GameObject bottlePieceOne, bottleSlotOne;
 
-    Vector2 bottleOnePos, bottleTwoPos, bottleThreePos;
+    Vector2 bottleOnePos;
     void Start()
     {
-       bottleOnePos = bottlePieceOne.transform.position;
-       bottleTwoPos = bottlePieceTwo.transform.position;
-       bottleThreePos = bottlePieceThree.transform.position;
-        
+       bottleOnePos = bottlePieceOne.transform.position; 
     }
 
    public void DragBottleOne()
@@ -20,15 +17,7 @@ public class Manager : MonoBehaviour
         bottlePieceOne.transform.position = Input.mousePosition;
    }
 
-    public void DragBottleTwo()
-    {
-        bottlePieceTwo.transform.position = Input.mousePosition;
-    }
-
-    public void DragBottleThree()
-    {
-        bottlePieceThree.transform.position = Input.mousePosition;
-    }
+   
 
     public void DropBottleOne()
     {
@@ -43,29 +32,5 @@ public class Manager : MonoBehaviour
         }
     }
 
-    public void DropBottleTwo()
-    {
-        float Distance = Vector3.Distance(bottlePieceTwo.transform.position, bottleSlotTwo.transform.position);
-        if (Distance < 50)
-        {
-            bottlePieceTwo.transform.position = bottleSlotTwo.transform.position;
-        }
-        else
-        {
-            bottlePieceTwo.transform.position = bottleTwoPos;
-        }
-    }
-
-    public void DropBottleThree()
-    {
-        float Distance = Vector3.Distance(bottlePieceThree.transform.position, bottleSlotThree.transform.position);
-        if (Distance < 50)
-        {
-            bottlePieceThree.transform.position = bottleSlotThree.transform.position;
-        }
-        else
-        {
-            bottlePieceThree.transform.position = bottleThreePos;
-        }
-    }
+    
 }

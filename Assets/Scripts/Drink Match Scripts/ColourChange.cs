@@ -1,14 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColourChange : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider col)
+    public Image myImage;
+
+
+    private void Start()
     {
-        if (col.gameObject.tag == "Colour")
-        {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
-        }
+        myImage = GetComponent<Image>();
+      
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        myImage.color = Color.red;
+        Debug.Log("Coll");
+    }
+
+
 }
