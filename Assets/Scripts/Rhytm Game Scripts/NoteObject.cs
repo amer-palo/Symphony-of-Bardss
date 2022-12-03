@@ -10,8 +10,13 @@ public class NoteObject : MonoBehaviour
     public KeyCode keyToPress;
     private bool obtained = false;
 
+    public GameObject noteHiteBard;
+    public GameObject noteMissedBard;
+
     void Start()
     {
+        noteHiteBard.SetActive(true);
+        noteMissedBard.SetActive(false);
         
     }
 
@@ -27,6 +32,8 @@ public class NoteObject : MonoBehaviour
 
                 RhythmManager.instance.NoteHit();
                 obtained = true;
+                noteMissedBard.SetActive(false);
+                noteHiteBard.SetActive(true);
             }
         }
     }
@@ -47,7 +54,8 @@ public class NoteObject : MonoBehaviour
             if (!obtained)
             {
                 RhythmManager.instance.NoteMissed();
-                Destroy(gameObject);
+                noteHiteBard.SetActive(false);
+                noteMissedBard.SetActive(true);
             }
 
             

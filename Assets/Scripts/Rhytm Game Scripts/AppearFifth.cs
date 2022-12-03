@@ -10,6 +10,13 @@ public class AppearFifth : MonoBehaviour
     public GameObject noteFour;
     public GameObject noteFive;
 
+    public GameObject set1;
+    public GameObject set2;
+    public GameObject set3;
+    public GameObject set4;
+    public GameObject set5;
+
+
     public void Start()
     {
         noteFive.SetActive(false);
@@ -40,5 +47,11 @@ public class AppearFifth : MonoBehaviour
         noteTwo.SetActive(true);
         noteThree.SetActive(true);
         noteFour.SetActive(true);
+
+        set1.SetActive(false);
+        set2.SetActive(false);
+        set3.SetActive(false);
+        set4.SetActive(false);
+        set5.SetActive(false);
     }
 }

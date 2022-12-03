@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -216,6 +224,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -728,6 +744,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -938,6 +962,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -1299,6 +1331,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -1385,6 +1425,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -1763,6 +1811,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1834,6 +1890,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -2555,6 +2619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1001 &561848066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,6 +2628,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -2776,11 +2850,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568370553}
   m_CullTransparentMesh: 1
+--- !u!1 &589107749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9197390193949534663, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+  m_PrefabInstance: {fileID: 9197390194164458374}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &593715263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
   m_PrefabInstance: {fileID: 8963595770926209373}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &624192730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624192732}
+  - component: {fileID: 624192731}
+  m_Layer: 0
+  m_Name: Missed note
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &624192731
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624192730}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 9abb0ee6ad8b3f244b35acb240e9a708, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.37, y: 6.73}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &624192732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624192730}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.5147204, y: -0.8510923, z: -0.005646439}
+  m_LocalScale: {x: 0.94966745, y: 0.94966745, z: 0.94966745}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1682070658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &634307029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2804,6 +2967,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3308,6 +3479,11 @@ Transform:
   m_Father: {fileID: 948213277}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &693157589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5522955058575798293, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+  m_PrefabInstance: {fileID: 937534643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &758952182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3393,6 +3569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &766832845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,6 +3674,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -3786,6 +3972,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -3856,6 +4050,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4105,6 +4307,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958805793}
   m_CullTransparentMesh: 1
+--- !u!1 &960077527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5522955058575798293, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+  m_PrefabInstance: {fileID: 109602444982851811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &972075404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4190,6 +4397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &976727247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,6 +4641,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -4590,6 +4807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1088599531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,6 +4967,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -4823,6 +5050,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -5122,6 +5357,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1160095325
 GameObject:
   m_ObjectHideFlags: 0
@@ -5204,7 +5441,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682070658}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164378366
 GameObject:
@@ -5348,6 +5585,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -5514,7 +5759,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682070658}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226325809
 GameObject:
@@ -5666,6 +5911,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -5745,6 +5998,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -6032,6 +6293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1001 &1352570261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6055,6 +6318,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6407,6 +6678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1460839614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6500,6 +6773,11 @@ MonoBehaviour:
   arrowThree: {fileID: 143247505}
   arrowFour: {fileID: 1411324593}
   arrowFive: {fileID: 415379043}
+  firstOne: {fileID: 960077527}
+  firstTwo: {fileID: 693157589}
+  firstThree: {fileID: 589107749}
+  firstFour: {fileID: 1976112811}
+  firstFive: {fileID: 1992443819}
 --- !u!114 &1460839618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6517,6 +6795,11 @@ MonoBehaviour:
   arrowThree3: {fileID: 1254398375}
   arrowFour4: {fileID: 1960165275}
   arrowFive5: {fileID: 1108067636}
+  set1: {fileID: 1352570263}
+  set2: {fileID: 1495669240}
+  set3: {fileID: 143247505}
+  set4: {fileID: 1411324593}
+  set5: {fileID: 415379043}
 --- !u!114 &1460839619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6534,6 +6817,11 @@ MonoBehaviour:
   arrowSetThree: {fileID: 1849367154}
   arrowSetFour: {fileID: 2118001060}
   arrowSetFive: {fileID: 1578611264}
+  set1: {fileID: 634307031}
+  set2: {fileID: 972075406}
+  set3: {fileID: 1254398375}
+  set4: {fileID: 1960165275}
+  set5: {fileID: 1108067636}
 --- !u!114 &1460839620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6551,6 +6839,11 @@ MonoBehaviour:
   arrow3: {fileID: 1188796125}
   arrow4: {fileID: 1746898544}
   arrow5: {fileID: 1072307162}
+  set1: {fileID: 1303895577}
+  set2: {fileID: 777129891}
+  set3: {fileID: 1849367154}
+  set4: {fileID: 2118001060}
+  set5: {fileID: 1578611264}
 --- !u!114 &1460839621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6568,6 +6861,11 @@ MonoBehaviour:
   noteThree: {fileID: 1878854090}
   noteFour: {fileID: 1518834321}
   noteFive: {fileID: 1259509199}
+  set1: {fileID: 1155569977}
+  set2: {fileID: 1061419361}
+  set3: {fileID: 1188796125}
+  set4: {fileID: 1746898544}
+  set5: {fileID: 1072307162}
 --- !u!114 &1460839622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6585,6 +6883,11 @@ MonoBehaviour:
   note3: {fileID: 2057167427}
   note4: {fileID: 1994061002}
   note5: {fileID: 2050225457}
+  set1: {fileID: 1729351259}
+  set2: {fileID: 2103269121}
+  set3: {fileID: 1878854090}
+  set4: {fileID: 1518834321}
+  set5: {fileID: 1259509199}
 --- !u!1001 &1495669238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6592,6 +6895,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -6704,6 +7015,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -6852,6 +7171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1585786052
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,6 +7450,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -7409,7 +7738,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682070658}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1665987925
 GameObject:
@@ -7506,6 +7835,7 @@ Transform:
   m_LocalScale: {x: 1.053, y: 1.053, z: 1.053}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 624192732}
   - {fileID: 1829360527}
   - {fileID: 1201822434}
   - {fileID: 1160095327}
@@ -7861,6 +8191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1001 &1746648247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7884,6 +8216,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -8032,6 +8372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1763791522
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,7 +8716,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682070658}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1849367152
 PrefabInstance:
@@ -8383,6 +8725,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -8497,7 +8847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682070658}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1874258998
 SpriteRenderer:
@@ -8644,6 +8994,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -8879,6 +9237,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -8963,6 +9329,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9197390193949534663, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
   m_PrefabInstance: {fileID: 1960165273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1976112811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1246401563056885539, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+  m_PrefabInstance: {fileID: 8963595770926209373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1992443819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3545574571485734478, guid: cd69a4bd1d0c7604da3a2f39b949cd48, type: 3}
@@ -8987,6 +9358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &1994061002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9197390193949534663, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
@@ -9302,6 +9675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &2057167427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5522955058575798293, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
@@ -9650,6 +10025,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 276
+  noteHiteBard: {fileID: 1201822432}
+  noteMissedBard: {fileID: 624192730}
 --- !u!1 &2103269121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1246401563056885539, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
@@ -9662,6 +10039,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02
@@ -10026,6 +10411,14 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 8533768732271245935, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 8829775923683665919, guid: dda041d6ed725b346abcd2048712dc07, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10152,6 +10545,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: First
       objectReference: {fileID: 0}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: 4658859900527833840, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: 7446962726167698289, guid: 7b112a09016258a40bfda659bd54c6bf, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -10205,6 +10606,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2010302102}
     m_Modifications:
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteHiteBard
+      value: 
+      objectReference: {fileID: 1201822432}
+    - target: {fileID: -2376982994490161452, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
+      propertyPath: noteMissedBard
+      value: 
+      objectReference: {fileID: 624192730}
     - target: {fileID: -1267670779985536903, guid: b74c8e6768caee446b6192dfb9773173, type: 3}
       propertyPath: m_Radius
       value: 2.02

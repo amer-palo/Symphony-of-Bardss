@@ -10,6 +10,12 @@ public class AppearSecond : MonoBehaviour
     public GameObject arrowFour4;
     public GameObject arrowFive5;
 
+    public GameObject set1;
+    public GameObject set2;
+    public GameObject set3;
+    public GameObject set4;
+    public GameObject set5;
+
     public void Start()
     {
         arrowFive5.SetActive(false);
@@ -39,5 +45,11 @@ public class AppearSecond : MonoBehaviour
         arrowTwo2.SetActive(true);
         arrowThree3.SetActive(true);
         arrowFour4.SetActive(true);
+
+        set1.SetActive(false);
+        set2.SetActive(false);
+        set3.SetActive(false);
+        set4.SetActive(false);
+        set5.SetActive(false);
     }
 }

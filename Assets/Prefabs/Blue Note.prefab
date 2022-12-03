@@ -116,3 +116,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 274
+  noteHiteBard: {fileID: 0}
+  noteMissedBard: {fileID: 0}
