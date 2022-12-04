@@ -19,5 +19,6 @@ public class LevelManager : MonoBehaviour
         {
             _ui.ToggleDeathUI();
         }
+       
     }
 }

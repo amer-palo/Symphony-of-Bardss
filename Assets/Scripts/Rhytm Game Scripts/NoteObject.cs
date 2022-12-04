@@ -12,6 +12,7 @@ public class NoteObject : MonoBehaviour
 
     public GameObject noteHiteBard;
     public GameObject noteMissedBard;
+    public ParticleSystem particleSystem;
 
     void Start()
     {
@@ -34,6 +35,7 @@ public class NoteObject : MonoBehaviour
                 obtained = true;
                 noteMissedBard.SetActive(false);
                 noteHiteBard.SetActive(true);
+                particleSystem.Play();  
             }
         }
     }

@@ -13,7 +13,7 @@ public class Attack : MonoBehaviour
     public Transform firePointRight;
 
     public GameObject blastPrefab;
-
+    
     public int reloadTime = 1;
 
     public void Update()

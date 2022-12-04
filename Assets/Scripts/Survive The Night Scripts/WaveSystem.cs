@@ -19,8 +19,8 @@ public class WaveSystem : MonoBehaviour
     private int currentWaveNumber;
     private float nextSpawnTime;
     public GameObject winUI;
-    public GameObject player;
-
+    public GameObject house;
+    
     private bool canSpawn = true;
 
 
@@ -39,7 +39,7 @@ public class WaveSystem : MonoBehaviour
             else
             {
                 winUI.SetActive(true);
-                player.SetActive(false);
+                house.SetActive(true);
             }
         }
     }
