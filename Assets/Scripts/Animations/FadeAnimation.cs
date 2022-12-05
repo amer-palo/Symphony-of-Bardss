@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.SceneManagement;
 
 public class FadeAnimation : MonoBehaviour
@@ -12,17 +13,16 @@ public class FadeAnimation : MonoBehaviour
   
     }
 
-    // Update is called once per frame
-    void Update()
+public void FadeOut()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-           FadeToLevel(1);
-        }*/
+
+    }
+    public void FadeIn()
+    {
 
     }
 
-     public void FadeToLevel (int levelName)
+    /* public void FadeToLevel (int levelName)
      {
           animator.SetTrigger("FadeOut");
      }
@@ -30,5 +30,5 @@ public class FadeAnimation : MonoBehaviour
     public void OnFadeComplete()
     {
         SceneManager.LoadScene("Symphony of Bards");
-    }
+    } */
 }

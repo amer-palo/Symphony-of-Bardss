@@ -2,64 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Save_Player : MonoBehaviour
+public class Save_Player : Singleton<Save_Player>
 {
-    public float x, y, z;
-    public float a, b, c;
-
-
+    public Transform exitPosition;
+    public Vector3 exitVector;
 
     public void Start()
     {
-        Save();
-        Load();
+        
     }
 
-    public void Save()
+    public void SavePosition(Transform exit)
     {
-        x = transform.position.x;
-        y = transform.position.y;
-        z = transform.position.z ;
-
-
-        PlayerPrefs.SetFloat("x", x);
-        PlayerPrefs.SetFloat("y", y);
-        PlayerPrefs.SetFloat("z", z);
+        exitPosition = exit;
+        exitVector = exitPosition.position;
     }
 
 
 
-    public void Load()
+    public Vector3 LoadPosition()
     {
-        x = PlayerPrefs.GetFloat("x");
-        y = PlayerPrefs.GetFloat("y");
-        z = PlayerPrefs.GetFloat("z");
-
-        Vector3 LoadPosition = new Vector3(x, y, z);
-        transform.position = LoadPosition;
-    }
-
-    public void SaveOutside()
-    {
-        a = transform.position.x;
-        b = transform.position.y;
-        c = transform.position.z;
-
-
-        PlayerPrefs.SetFloat("x", a);
-        PlayerPrefs.SetFloat("y", b);
-        PlayerPrefs.SetFloat("z", c);
-    }
-
-
-
-    public void LoadOutside()
-    {
-        a = PlayerPrefs.GetFloat("x");
-        b = PlayerPrefs.GetFloat("y");
-        c = PlayerPrefs.GetFloat("z");
-
-        Vector3 LoadPosition = new Vector3(a, b, c);
-        transform.position = LoadPosition;
+        return exitVector;
     }
 }

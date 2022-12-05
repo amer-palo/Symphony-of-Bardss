@@ -5,7 +5,7 @@ using UnityEngine;
 
 public enum PlayerState { Play, Talk, Other}
 public enum Direction { Up, Down, Left, Right}
-public class CharacterController2D : MonoBehaviour
+public class CharacterController2D : GameBehaviour
 {
     Animator anim;
 
@@ -23,6 +23,7 @@ public class CharacterController2D : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        transform.position = _Save.LoadPosition();
     }
     private void Awake()
     {
@@ -32,9 +33,13 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        if (_SC.gameState == GameState.Loading)
+            return;
+
+
         float moveX = 0f;
         float moveY = 0f;
-        if (playerState == PlayerState.Play)
+        if (playerState == PlayerState.Play && _SC.gameState == GameState.Play)
         {
             if (Input.GetKey(KeyCode.W))
             {

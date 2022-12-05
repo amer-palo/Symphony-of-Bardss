@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TavernCollider : MonoBehaviour
+public class TavernCollider : GameBehaviour
 {
     public GameObject player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Tavern");
-        player.GetComponent<Save_Player>().SaveOutside();
+        GoToTavern();
+    }
+    public void GoToTavern()
+    {
+        
+        _SC.FadeOut("Tavern");
     }
 }

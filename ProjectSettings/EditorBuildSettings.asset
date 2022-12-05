@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: d777ebdde8b79c5488d3193f87cffaf1
   - enabled: 1
-    path: Assets/Scenes/Symphony of Bards.unity
+    path: Assets/Scenes/Outside.unity
     guid: 356ef55312f51cb45a261a0ec02f5c36
   - enabled: 1
     path: Assets/Scenes/Tavern.unity

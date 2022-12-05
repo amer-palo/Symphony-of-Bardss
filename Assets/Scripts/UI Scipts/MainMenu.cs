@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : GameBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Symphony of Bards");
+        _SC.FadeOut("Symphony of Bards");
     }
 
     public void QuitGame()
