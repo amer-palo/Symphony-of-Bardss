@@ -1,40 +1,44 @@
-Oh.. Hello there little one... what brings a morsel like you to this Tavern? #speaker: Agatha
+- Oh, hello there, little one, what brings a morsel like you to this Tavern? #speaker: Agatha
 
-*Im a travelling Bard, miss...? #speaker: Bard
 
-- Call me Agatha my dear, a Bard you said? are you actually a bard or one of those silly minstrels that come through #speaker: Agatha
+* I'm a travelling Bard, miss...? #speaker: Bard
 
-*A real Bard Miss Agatha #speaker: Bard
+- Call me Agatha, my dear, a bard you said? Are you actually a bard, or just one of those silly little minstrels that come through? #speaker: Agatha
 
-- Just Agatha my dear, now what did you want to discuss? #speaker: Agatha
+* A real bard, Miss Agatha. #speaker: Bard
 
-*What are you? you seam to draw the light to you while staying cloaked in shadows... #speaker: Bard
+- Just Agatha, my dear. Now, what did you want to discuss? #speaker: Agatha
+
+*  What are you? The shadows and the light seem to ebb and flow around you in rhythm. #speaker: Bard
 ->Magic
 
-What brings you here of all places? forgicve me you seam.. more than this place. #speaker: Bard
+* What brings you here? Forgive me, it's just that you seem.. more than this place. #speaker: Bard
 ->Family
 
-*I like your staff, whats it made of? #speaker: Bard
+* I like your staff, what's it made of? #speaker: Bard
 ->Staff
 
 
 ==== Magic ====
--ha ha... I am a Witch my little Bard one who has travelled over these lands and learnt its secrets. #speaker: Agatha
-*Can you teach me anything? #speaker: Bard
+- Ha ha, I am a Witch, my little Bard. One who has travelled all over these lands and learnt its many secrets. #speaker: Agatha
 
--mmmh... yes, and no you see alot of what can be learned must be learnt from the source, other wise it wont work properly. i could teach you a few parlour tricks but its much better to learn on your own.#speaker: Agatha
+* Can you teach me anything? #speaker: Bard
 
-*Can you tell me of your travels then? #speaker: Bard
+-Mmmmh... yes, and no. You see, a lot of what can be learned must be learnt from the source, otherwise it won't work properly. I could teach you a few parlour tricks but it's much better to learn on your own. #speaker: Agatha
 
--of course little one, but im afraid my mug has run dry and i must fetch another, come back latter and i will tell you the wonderous places i have seen. #speaker: Agatha
+* Can you tell me of your travels then? #speaker: Bard
+
+- Of course little one, but I'm afraid my mug has run dry and I must fetch another. Why don't you come back later and I'll tell you about all the wonderous places I've seen. #speaker: Agatha
 ->END
 
 === Family ===
--I suppose it does,little one but one thing you must remember is that family comes before anything, my Uncle, Jon runs this Tavern and i like to drop by on occasion to check up on him he has been so lonely since my aunt passed away. #speaker: Agatha
-*oh im sorry to hear that #speaker: Bard
--you needent worry my dear but you must excuse me as i require another Ale. #speaker: Agatha
+- I suppose it does, little one, but one thing you must remember is that family comes before anything. My uncle, Jon, runs this Tavern and I like to drop by to check up on him when I can. He's been so lonely since my aunt passed away. #speaker: Agatha
+
+*Oh, I'm sorry to hear that. #speaker: Bard
+
+- You needn't worry my dear, but you must excuse me as I require another Ale. #speaker: Agatha
 ->END
 
 === Staff ===
--its fasioned from the branch of an oak who saw the birth and death of a dragon some 3500 years ago now run along i need to talk to my Uncle #speaker: Agatha
+- It's fashioned from the branch of an oak tree who saw the birth and death of a dragon some 3500 years ago. Now run along my dear, I need to talk to my uncle. #speaker: Agatha
 ->END
