@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject bottlePieceOne, bottleSlotOne, bottleSlotTwo, bottleSlotThree;
+    public GameObject bottlePieceOne, bottlePieceTwo, bottlePieceThree, bottleSlotOne, bottleSlotTwo, bottleSlotThree;
 
-    Vector2 bottleOnePos;
+    Vector2 bottleOnePos, bottleTwoPos, bottleThreePos;
     void Start()
     {
-       bottleOnePos = bottlePieceOne.transform.position; 
+       bottleOnePos = bottlePieceOne.transform.position;
+       bottleTwoPos = bottlePieceOne.transform.position;
+       bottleThreePos = bottlePieceOne.transform.position;
     }
 
    public void DragBottleOne()
@@ -18,7 +20,17 @@ public class Manager : MonoBehaviour
         bottlePieceOne.transform.position = Input.mousePosition;
    }
 
-   
+    public void DragBottleTwo()
+    {
+        bottlePieceTwo.transform.position = Input.mousePosition;
+    }
+
+    public void DragBottleThree()
+    {
+        bottlePieceThree.transform.position = Input.mousePosition;
+    }
+
+
 
     public void DropBottleOne()
     {
@@ -31,6 +43,7 @@ public class Manager : MonoBehaviour
                 bottlePieceOne.transform.position = bottleSlotOne.transform.position;
                 Destroy(bottlePieceOne);
                 Destroy(bottleSlotOne);
+                bottlePieceTwo.SetActive(true);
             }
         }
         else
@@ -42,34 +55,39 @@ public class Manager : MonoBehaviour
     public void DropBottleTwo()
     {
 
-        float distance = Vector3.Distance(bottlePieceOne.transform.position, bottleSlotTwo.transform.position);
-        if (bottlePieceOne.tag == "Blue")
+        float distance = Vector3.Distance(bottlePieceTwo.transform.position, bottleSlotTwo.transform.position);
+        if (bottlePieceTwo.tag == "Blue")
         {
             if (distance < 50)
             {
-                bottlePieceOne.transform.position = bottleSlotTwo.transform.position;
+                bottlePieceTwo.transform.position = bottleSlotTwo.transform.position;
+                Destroy(bottlePieceTwo);
+                Destroy(bottleSlotTwo);
+                bottlePieceThree.SetActive(true);
             }
         }
         else
         {
-            bottlePieceOne.transform.position = bottleOnePos;
+            bottlePieceTwo.transform.position = bottleTwoPos;
         }
     }
 
     public void DropBottleThree()
     {
 
-        float distance = Vector3.Distance(bottlePieceOne.transform.position, bottleSlotTwo.transform.position);
-        if (bottlePieceOne.tag == "Green")
+        float distance = Vector3.Distance(bottlePieceThree.transform.position, bottleSlotThree.transform.position);
+        if (bottlePieceThree.tag == "Green")
         {
             if (distance < 50)
             {
-                bottlePieceOne.transform.position = bottleSlotOne.transform.position;
+                bottlePieceThree.transform.position = bottleSlotThree.transform.position;
+                Destroy(bottlePieceThree);
+                Destroy(bottleSlotThree);
             }
         }
         else
         {
-            bottlePieceOne.transform.position = bottleOnePos;
+            bottlePieceThree.transform.position = bottleThreePos;
         }
     }
 
