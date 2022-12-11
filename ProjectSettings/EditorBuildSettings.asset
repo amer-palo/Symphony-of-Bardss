@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside.unity
     guid: 356ef55312f51cb45a261a0ec02f5c36
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tavern.unity
     guid: ca4005df0b4b0d840a800410cb99292c
   - enabled: 1
@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Survive The Night Game.unity
     guid: abcaaa293b9bb834dafd322bca0fea60
+  - enabled: 1
+    path: Assets/Scenes/Tavern 3.0.unity
+    guid: d92d1f2ee036bc9428a7a015d02ee96a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ea68e328b9896345b249167d5c7c22b, type: 2}

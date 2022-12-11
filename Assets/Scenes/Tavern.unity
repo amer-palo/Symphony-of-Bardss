@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 1536878676}
+    - target: {fileID: 515977502739095053, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+      propertyPath: BromInkJSON2
+      value: 
+      objectReference: {fileID: 4900000, guid: 342cc9d32e536b24e96da7b66405a7d8, type: 3}
     - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -668,11 +672,6 @@ Transform:
   m_Father: {fileID: 1240000814}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &335433193 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8935223987564498099, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
-  m_PrefabInstance: {fileID: 392877509}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &392877509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1261,6 +1260,10 @@ PrefabInstance:
       value: 6.36
       objectReference: {fileID: 0}
     - target: {fileID: 515977502739095053, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+      propertyPath: inkJSON2
+      value: 
+      objectReference: {fileID: 4900000, guid: b8f3cce03b8608e43af6c335b7b991b6, type: 3}
+    - target: {fileID: 515977502739095053, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 2111548205}
@@ -1278,6 +1281,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
@@ -1722,13 +1729,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: 23fa31c48704bef488adabc7d6d9e068, type: 3}
     - target: {fileID: 515977502739095053, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+      propertyPath: inkJSON2
+      value: 
+      objectReference: {fileID: 4900000, guid: d4f81fd51516746408e242adfdf3e99a, type: 3}
+    - target: {fileID: 515977502739095053, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: character
       value: 
-      objectReference: {fileID: 335433193}
+      objectReference: {fileID: 1592596733}
     - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fb5fed17d08d8bc458af5ebd161d7d04, type: 3}
+    - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 515977502936730004, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2373,6 +2388,11 @@ GameObject:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8145379000884972851, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
   m_PrefabInstance: {fileID: 392877509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1592596733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 515977502936730005, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
+  m_PrefabInstance: {fileID: 1081746554}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1603791306 stripped
 GameObject:

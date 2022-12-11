@@ -10,10 +10,18 @@ public class DialogueTrigger : MonoBehaviour
     private bool playerInRange;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
 
-    [SerializeField] private GameObject character;
-    
+    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON2;
+    [SerializeField] private TextAsset BromInkJSON2;
+
+    [SerializeField] public GameObject character;
+
+    SpriteRenderer sprite;
+
+   public bool interaction1 = false;
+
+   
 
     private void Awake()
     {
@@ -21,6 +29,11 @@ public class DialogueTrigger : MonoBehaviour
         visualCue.SetActive(false);
         character.SetActive(false);
         
+
+    }
+    public void Start()
+    {
+        sprite = GetComponentInParent<SpriteRenderer>();
     }
 
     private void Update()
@@ -33,13 +46,35 @@ public class DialogueTrigger : MonoBehaviour
                 DialogueManager.GetInstance().NPC = character;
                 
                 Debug.Log("character Active");
-                DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                if (interaction1 == false)
+                {
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
+                    interaction1 = true;
+                }
+                else if (interaction1 == true)
+                {
+                    DialogueManager.GetInstance().EnterDialogueMode(inkJSON2);
+                    interaction1 = false;
+                }
+                else if (interaction1 == true && CharacterController2D.GetInstance().hasKeys == true)
+                {
+                    DialogueManager.GetInstance().EnterDialogueMode(BromInkJSON2);
+                    interaction1 = false;
+                }
+               
+
             }
         }
         else
             visualCue.SetActive(false);
             
-
+        if (DialogueManager.GetInstance().bardSpeak == true)
+        {
+            
+            sprite.color = new Color(255, 255, 255, 127);
+        }
+        else
+            sprite.color = new Color(255, 255, 255, 255);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

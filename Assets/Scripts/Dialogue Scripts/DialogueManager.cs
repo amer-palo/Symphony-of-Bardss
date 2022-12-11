@@ -34,6 +34,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject player;
     public GameObject NPC;
     public Rigidbody2D rB;
+
+    public bool bardSpeak = false;
     //public PlayerState state;
 
     public CharacterController2D characterController;
@@ -86,6 +88,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        Debug.Log("DialogueMode");
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -131,6 +134,9 @@ public class DialogueManager : MonoBehaviour
     
     private void DisplayChoices()
     {
+
+        bardSpeak = true;
+
         List<Choice> currentChoices = currentStory.currentChoices;
 
         //Defence against infinite choices
@@ -162,6 +168,7 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        bardSpeak = false;
     }
 
     public void MakeChoice(int choiceIndex)
