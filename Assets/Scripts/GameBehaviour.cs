@@ -6,6 +6,7 @@ public class GameBehaviour : MonoBehaviour
 {
     protected static Save_Player _Save { get { return Save_Player.INSTANCE; } }
     protected static SceneController _SC { get { return SceneController.INSTANCE; } }
+ 
 
 
     /// <summary>

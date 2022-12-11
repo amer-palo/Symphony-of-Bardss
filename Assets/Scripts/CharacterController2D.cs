@@ -11,13 +11,14 @@ public class CharacterController2D : GameBehaviour
 
     private const float MOVE_SPEED = 5f;
 
+    private static CharacterController2D instance;
 
-    
     private Rigidbody2D rigidbody2D;
     private Vector3 moveDir;
 
     public PlayerState playerState;
     public Direction direction;
+    public bool hasKeys = false;
 
 
     void Start()
@@ -84,7 +85,10 @@ public class CharacterController2D : GameBehaviour
     private void FixedUpdate()
     {
         rigidbody2D.velocity = moveDir * MOVE_SPEED;
-    } 
+    }
 
-    
+    public static CharacterController2D GetInstance()
+    {
+        return instance;
+    }
 }

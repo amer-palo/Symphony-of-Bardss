@@ -1,33 +1,54 @@
-Good Day Traveler how may i help you?
+Good Day Traveler, how may I help you?
 
- * Hi im a Traveling Bard #speaker: Bard
+ * Hi, I'm a traveling bard. #speaker: Bard
  ->continue 
- * Nothing, sorry to bother you #speaker: Bard
+ * Nothing, sorry to bother you. #speaker: Bard
  ->No
 
 ===continue===
- -Oh a tarvelling bard you say well your more than welcome here, My name is Jon and i own the place #speaker: Jon
- -the stage is over there when your ready but feel free to mingle the night is young and the people here are freindly
-+whats with that sword up there? #speaker: Bard
+ - Oh, a bard you say? Well, you're more than welcome here. My name is Jon, I own the place. #speaker: Jon
+ - The stage is over there when you're ready to play some music, but feel free to mingle. The night is young, and the people here are very friendly.
++ What's with that sword up there? #speaker: Bard
 ->Denial
 +Tell me about the place.#speaker: Bard
 ->TheTown 
 
-+hows the Tavern doing? #speaker: Bard
--its doing quite well at the moment, the only real problem is im low on Blue Ale and havent got anymore here,#speaker: Jon
--ive got some out in storge but i cant leave the bar unattended and my neice has had too many to do it properly #speaker: Jon
++ How's the Tavern doing? #speaker: Bard
+->BlueAle
+
+===BlueAle===
+- It's doing quite well at the moment, the only real problem is that I'm low on Blue Ale at the moment and haven't got anymore here. #speaker: Jon
+-I've got some out in storge, but I can't leave the bar unattended, and my niece has had too many drinks to get it for me. #speaker: Jon
+
++ What's with that sword up there? #speaker: Bard
+->Denial
++Tell me about the place.#speaker: Bard
+->TheTown 
+*Im sorry to hear that, talk to you later #speaker: Bard
 ->END
 
 === No ===
--no trouble have a nice evening #speaker: Jon
+-No trouble, have a nice evening. #speaker: Jon
 ->END
 
 ===TheTown===
-There isnt much to say really, the town is rather small, it barely has a name, there are some intresting characters about, sorry id love to keep talking but i need to serve somebody. #speaker: Jon
+There isn't much to say really. The town is rather small, it barely has a name, but there are some intresting characters about. #speaker: enjoying
+-I'd love to keep talking but I have customers to serve. Is there anything else? #speaker: Jon
++ How's the Tavern doing? #speaker: Bard
+->BlueAle
++ What's with that sword up there? #speaker: Bard
+->Denial
+* Ok thank you.#speaker: Bard
 ->END
 
 === Denial ===
-Nothing, its just an old relic, enjoy the rest of your evening Bard. #speaker: Jon
+Nothing, it's just an old relic I keep around. If thats all enjoy the rest of your evening, Bard. #speaker: Jon
+-Actually... #speaker: Bard
++Could you tell me about the place.#speaker: Bard
+->TheTown 
++ How's the Tavern doing? #speaker: Bard
+->BlueAle
+*You too.#speaker: Bard
 ->END
 
     
