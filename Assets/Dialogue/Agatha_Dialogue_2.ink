@@ -8,6 +8,7 @@
 
 
 ===Uncle===
+<<<<<<< Updated upstream
 - Well aren't you a nosy little thing. Well, it's not really my place to say, and I don't know much about it, #speaker: Agatha
 -but I do know that it's older than this tavern. If I'm remembering correctly, I believe he was an adventurer before opening the tavern. #speaker: Agatha
 
@@ -17,6 +18,15 @@
 
 * Can you tell me about your travels? #speaker: Bard
 ->Travels
+=======
+- Well aren't you a nosy little thing. Well, it's not really my place to say, and I don't know much about it, but I do know that it's older than this tavern. If I'm remembering correctly, I believe he was an adventurer before opening the tavern. #speaker: Agatha
+
+- When I left for my travels, he gave me a bunch of maps from all over the kingdom, as well as a travelling kit to help me start out. It was quite helpful actually. #speaker: Agatha
+
+- Do you want to know anything else, little one? #speaker: Agatha
+
+* Can you tell me about your travels? #speaker: Bard
+>>>>>>> Stashed changes
 ->END
 ===Travels ===
 - I'm afraid that you'll have to be more specific my dear, I've been all over the kingdom. Perhaps you'd wish to hear about the time I spent in the Caves of Ciaphas? #speaker: Agatha

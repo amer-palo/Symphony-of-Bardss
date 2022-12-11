@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 7470338edbb5b4d49a1c68c4624afdd4
+=======
+<<<<<<< Updated upstream:Assets/Dialogue/Agatha_Dialogue_1 1.json.meta
+guid: f8b483e580f280144907d05a1f8cc087
+=======
+guid: 7470338edbb5b4d49a1c68c4624afdd4
+>>>>>>> Stashed changes:Assets/Dialogue/Aden_dialogue_1.json.meta
+>>>>>>> Stashed changes
 TextScriptImporter:
   externalObjects: {}
   userData: 
