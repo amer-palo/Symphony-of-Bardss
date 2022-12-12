@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
 
     private const string SPEAKER_TAG = "speaker";
+    private const string EMOTE = "emote";
 
     //needed for freezing player
     public GameObject player;
@@ -168,12 +169,13 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-        bardSpeak = false;
+        //bardSpeak = false;
     }
 
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+        bardSpeak = false;
     }
 
     public void HandleTags(List<string> currentTags)
@@ -190,12 +192,15 @@ public class DialogueManager : MonoBehaviour
             string tagValue = splitTag[1].Trim();
 
 
-            switch (tagKey)
+            switch (tagKey) //change out for if statement
             {
                 case SPEAKER_TAG:
                     displayName.text = tagValue;
                     Debug.Log("speaker =" + tagValue);
                     break;
+                case EMOTE:
+                    break;
+
 
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled:" + tag);
