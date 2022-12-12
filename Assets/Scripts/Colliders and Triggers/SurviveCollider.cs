@@ -7,6 +7,7 @@ public class SurviveCollider : GameBehaviour
 {
     public GameObject surviveUI;
     public GameObject player;
+    public Transform exitPoint;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +17,7 @@ public class SurviveCollider : GameBehaviour
     }
     public void gotoSurvive()
     {
-
+        _Save.SavePosition(exitPoint);
         _SC.FadeOut("Survive The Night Game");
         Time.timeScale = 1f;
     }
