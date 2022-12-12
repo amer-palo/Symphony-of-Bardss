@@ -20,7 +20,7 @@ public class WaveSystem : MonoBehaviour
     private float nextSpawnTime;
     public GameObject winUI;
     public GameObject house;
-    
+
     private bool canSpawn = true;
 
 
@@ -40,8 +40,16 @@ public class WaveSystem : MonoBehaviour
             {
                 winUI.SetActive(true);
                 house.SetActive(true);
+                Time.timeScale = 0f;
             }
         }
+    }
+
+    public void Continue()
+    {
+        Debug.Log("Presed");
+        winUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     void SpawnNextWave()
