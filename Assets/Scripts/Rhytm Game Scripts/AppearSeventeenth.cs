@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AppearFourth : MonoBehaviour
+public class AppearSeventeenth : MonoBehaviour
 {
     public GameObject arrow1;
     public GameObject arrow2;
@@ -39,13 +39,9 @@ public class AppearFourth : MonoBehaviour
 
     IEnumerator WaitBeforeShown()
     {
-        yield return new WaitForSeconds(14.2f);
+        yield return new WaitForSeconds(60.1f);
 
-        arrow1.SetActive(true);
-        arrow2.SetActive(true);
-        arrow3.SetActive(true);
-        arrow4.SetActive(true);
-        arrow5.SetActive(true);
+        
 
         set1.SetActive(false);
         set2.SetActive(false);

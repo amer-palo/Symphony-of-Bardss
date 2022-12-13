@@ -39,7 +39,7 @@ public class Appear : MonoBehaviour
 
     IEnumerator WaitBeforeShow()
     {
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(3.5f);
 
         arrowFive.SetActive(true);
         arrowOne.SetActive(true);

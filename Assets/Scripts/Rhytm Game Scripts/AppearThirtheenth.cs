@@ -38,7 +38,7 @@ public class AppearThirtheenth : MonoBehaviour
 
     IEnumerator WaitBeforeShowinggg()
     {
-        yield return new WaitForSeconds(34.3f);
+        yield return new WaitForSeconds(45.9f);
 
         note1.SetActive(true);
         note2.SetActive(true);

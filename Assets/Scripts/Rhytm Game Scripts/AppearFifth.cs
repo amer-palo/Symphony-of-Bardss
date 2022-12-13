@@ -40,7 +40,7 @@ public class AppearFifth : MonoBehaviour
 
     IEnumerator WaitBeforeShowingg()
     {
-        yield return new WaitForSeconds(13.2f);
+        yield return new WaitForSeconds(17.7f);
 
         noteFive.SetActive(true);
         noteOne.SetActive(true);

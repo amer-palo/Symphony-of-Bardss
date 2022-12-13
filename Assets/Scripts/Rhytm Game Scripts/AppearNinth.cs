@@ -38,7 +38,7 @@ public class AppearNinth : MonoBehaviour
 
     IEnumerator WaitBeforeShowinggg()
     {
-        yield return new WaitForSeconds(23.9f);
+        yield return new WaitForSeconds(31.8f);
 
         note1.SetActive(true);
         note2.SetActive(true);

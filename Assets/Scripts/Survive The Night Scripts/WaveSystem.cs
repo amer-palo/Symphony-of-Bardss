@@ -20,7 +20,8 @@ public class WaveSystem : MonoBehaviour
     private float nextSpawnTime;
     public GameObject winUI;
     public GameObject house;
-
+    public bool gameOver;
+    public int Go = 0;
     private bool canSpawn = true;
 
 
@@ -35,21 +36,22 @@ public class WaveSystem : MonoBehaviour
             {
                 SpawnNextWave();
             }
-
             else
             {
-                winUI.SetActive(true);
-                house.SetActive(true);
-                Time.timeScale = 0f;
+                gameOver = true;
             }
+        }
+        if(gameOver == true)
+        {
+            GameOver();
+            Go = 1;
         }
     }
 
-    public void Continue()
+    public void ContinueGame()
     {
         Debug.Log("Presed");
         winUI.SetActive(false);
-        Time.timeScale = 1f;
     }
 
     void SpawnNextWave()
@@ -58,6 +60,16 @@ public class WaveSystem : MonoBehaviour
         canSpawn = true;
     }
 
+    public void GameOver()
+    {
+        if(Go == 1)
+        {
+            gameOver = false;
+            winUI.SetActive(true);
+            house.SetActive(true);
+            Go = Go + 1;
+        }
+    }
 
     void SpawnWave()
     {
