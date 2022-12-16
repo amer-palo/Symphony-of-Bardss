@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
-public class RhythmManager : MonoBehaviour
+public class RhythmManager : GameBehaviour
 {
     public AudioClip[] clips;
     private AudioSource audioSource;
@@ -164,7 +164,7 @@ public class RhythmManager : MonoBehaviour
 
     public void LoadTavern()
     {
-        SceneManager.LoadScene("Tavern");
+        _SC.FadeOut("Tavern 3.0");
     }
 
     private AudioClip GetRandomClip()

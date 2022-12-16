@@ -7,7 +7,7 @@ public class MainMenu : GameBehaviour
 {
     public void PlayGame()
     {
-        _SC.FadeOut("Symphony of Bards");
+        _SC.FadeOut("Outside");
     }
 
     public void QuitGame()

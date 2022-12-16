@@ -11,6 +11,7 @@ TagManager:
   - Blue
   - Green
   - Bottle
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -51,15 +52,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Arrows
+  - name: 2
     uniqueID: 5674937
     locked: 0
-  - name: Player
+  - name: 3
     uniqueID: 2629962079
     locked: 0
-  - name: Water
+  - name: 4
     uniqueID: 1699883779
     locked: 0
-  - name: Front
+  - name: 5
     uniqueID: 1819210039
+    locked: 0
+  - name: Overlay
+    uniqueID: 2739776093
     locked: 0

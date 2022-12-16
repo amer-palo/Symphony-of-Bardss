@@ -20,16 +20,26 @@ public class CharacterController2D : GameBehaviour
     public Direction direction;
     public bool hasKeys = false;
 
+    public Transform startPosition;
 
+ 
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        if (_Save.firstStart == 0)
+        {
+            transform.position = startPosition.position;
+            _Save.firstStart = 1;
+            Debug.Log("First Spawn");
+        }
+        else
         transform.position = _Save.LoadPosition();
     }
     private void Awake()
     {
         
         rigidbody2D = GetComponent<Rigidbody2D>();
+        
     }
 
     private void Update()

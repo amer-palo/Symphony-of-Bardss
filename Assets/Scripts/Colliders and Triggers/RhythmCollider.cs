@@ -18,6 +18,7 @@ public class RhythmCollider : GameBehaviour
     }
     public void gotoRhytm()
     {
+        Debug.Log("button hit");
         _Save.SavePosition(exitPoint);
         _SC.FadeOut("Rhythm");
         Time.timeScale = 1f;

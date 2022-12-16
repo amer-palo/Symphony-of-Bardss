@@ -13,7 +13,9 @@ public class TavernCollider : GameBehaviour
     }
     public void GoToTavern()
     {
+        _Save.firstStart = 0;
         _Save.SavePosition(exitPoint);
         _SC.FadeOut("Tavern 3.0");
+        
     }
 }

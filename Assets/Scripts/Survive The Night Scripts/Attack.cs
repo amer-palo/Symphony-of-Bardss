@@ -65,7 +65,7 @@ public class Attack : MonoBehaviour
     }
     public void ResetFire()
     {
-        Debug.Log("Reset");
+       // Debug.Log("Reset");
         StartCoroutine(Delay());
        
         

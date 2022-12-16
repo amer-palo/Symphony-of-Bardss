@@ -36,15 +36,13 @@ public class WaveSystem : MonoBehaviour
             {
                 SpawnNextWave();
             }
-            else
+            else if (Go <= 0)
             {
-                gameOver = true;
+                Debug.Log("end");
+                winUI.SetActive(true);
+                house.SetActive(true);
+                Go = Go + 1;
             }
-        }
-        if(gameOver == true)
-        {
-            GameOver();
-            Go = 1;
         }
     }
 
