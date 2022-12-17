@@ -14,6 +14,10 @@ TagManager:
   - Enemy
   - Yellow
   - Mug
+  - Orange
+  - Brown
+  - Purple
+  - Empty
   layers:
   - Default
   - TransparentFX
