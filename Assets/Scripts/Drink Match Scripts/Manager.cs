@@ -76,7 +76,7 @@ public class Manager : MonoBehaviour
     {
 
         float distance = Vector3.Distance(bottlePieceThree.transform.position, bottleSlotThree.transform.position);
-        if (bottlePieceThree.tag == "Green")
+        if (bottlePieceThree.tag == "Yellow")
         {
             if (distance < 50)
             {

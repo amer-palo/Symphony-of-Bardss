@@ -12,6 +12,8 @@ TagManager:
   - Green
   - Bottle
   - Enemy
+  - Yellow
+  - Mug
   layers:
   - Default
   - TransparentFX

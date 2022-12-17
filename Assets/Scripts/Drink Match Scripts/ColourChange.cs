@@ -8,11 +8,19 @@ public class ColourChange : MonoBehaviour
 {
     public Image myImage;
     public string newTag;
+    //public Image redMug;
+    public Sprite redMugRenderer;
+    public Sprite blueMugRenderer;
+    public Sprite yellowMugRenderer;
+    public Sprite orangeRenderer;
+    public Sprite brownRenderer;
+    public Sprite greenMugRenderer;
+    public Sprite purpleMugRenderer;
 
 
     private void Start()
     {
-        gameObject.tag = "Bottle";
+        gameObject.tag = "Mug";
         myImage = GetComponent<Image>();
       
     }
@@ -21,22 +29,22 @@ public class ColourChange : MonoBehaviour
     {
         if (other.gameObject.tag == "Red")
         {
+            this.gameObject.GetComponent<Image>().sprite = redMugRenderer;
             gameObject.tag = "Red";
-            myImage.color = Color.red;
             Debug.Log("Coll");
         }
 
         if (other.gameObject.tag == "Blue")
         {
+            this.gameObject.GetComponent<Image>().sprite = blueMugRenderer;
             gameObject.tag = "Blue";
-            myImage.color = Color.blue;
             Debug.Log("Coll");
         }
 
-        if (other.gameObject.tag == "Green")
+        if (other.gameObject.tag == "Yellow")
         {
-            gameObject.tag = "Green";
-            myImage.color = Color.green;
+            this.gameObject.GetComponent<Image>().sprite = yellowMugRenderer;
+            gameObject.tag = "Yellow";
             Debug.Log("Coll");
         }
     }
