@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private GameObject questionsPanel;
+    //[SerializeField] private GameObject journal;
 
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayName;
@@ -80,6 +81,10 @@ public class DialogueManager : MonoBehaviour
         {
             ContinueStory();
         }
+        if (Input.GetKeyDown(KeyCode.Backspace) && dialogueIsPlaying == true)
+        {
+            ExitDialogueMode();
+        }
     }
 
     public static DialogueManager GetInstance()
@@ -113,9 +118,11 @@ public class DialogueManager : MonoBehaviour
 
             HandleTags(currentStory.currentTags);
         }
-        else
+        else 
         {
-            ExitDialogueMode();
+            //ExitDialogueMode();
+
+            Debug.Log("exit cant continue");
         }
     }
     
@@ -125,10 +132,14 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
         dialogueText.text = "";
+        //journal.SetActive(true);
+
+
         //Unfreezes the player and changes the player state to play
         rB.constraints = RigidbodyConstraints2D.None;
         rB.constraints = RigidbodyConstraints2D.FreezeRotation;
         characterController.ChangePlayerState(PlayerState.Play);
+        //need to move this somewhere else
 
         NPC.SetActive(false);
     }

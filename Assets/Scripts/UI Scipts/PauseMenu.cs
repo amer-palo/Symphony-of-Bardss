@@ -9,6 +9,7 @@ public class PauseMenu : GameBehaviour
     public static bool isPaused = false;
 
     public GameObject pauseMenu;
+    public GameObject popupMenu;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,7 +39,7 @@ public class PauseMenu : GameBehaviour
         }
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
@@ -58,10 +59,28 @@ public class PauseMenu : GameBehaviour
         Time.timeScale = 1f;
         _SC.FadeOut("Start");
     }
+    public void Back()
+    {
+        popupMenu.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
 
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource a in audios)
+        {
+            a.Play();
+        }
+    }
     public void Quitting()
     {
         Debug.Log("QUITTING!");
         Application.Quit();
+    }
+
+    public void GoToTavern()
+    {
+        _SC.FadeOut("Tavern 3.0");
+
     }
 }

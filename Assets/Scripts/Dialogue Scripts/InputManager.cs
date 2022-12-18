@@ -71,10 +71,10 @@ public class InputManager : MonoBehaviour
         {
             submitPressed = true;
         }
-        else if (context.canceled)
-        {
-            submitPressed = false;
-        }
+       // else if (context.canceled)
+        //{
+          //  submitPressed = false;
+       // }
     }
 
     public Vector2 GetMoveDirection()

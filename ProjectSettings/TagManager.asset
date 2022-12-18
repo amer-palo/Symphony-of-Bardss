@@ -18,6 +18,10 @@ TagManager:
   - Brown
   - Purple
   - Empty
+  - Agatha
+  - Brom
+  - Jon
+  - Aden
   layers:
   - Default
   - TransparentFX

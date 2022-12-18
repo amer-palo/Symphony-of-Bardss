@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside.unity
     guid: 356ef55312f51cb45a261a0ec02f5c36
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tavern.unity
     guid: ca4005df0b4b0d840a800410cb99292c
   - enabled: 1
