@@ -241,6 +241,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1342254635658929614, guid: fb533f4806791004faca5dcf6e7d20aa, type: 3}
+      propertyPath: m_Volume
+      value: 0.404
+      objectReference: {fileID: 0}
     - target: {fileID: 1342254635658929615, guid: fb533f4806791004faca5dcf6e7d20aa, type: 3}
       propertyPath: m_Name
       value: Audio Source
@@ -1966,6 +1970,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1591903609392748619, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1591903609673485607, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2065,14 +2073,14 @@ PrefabInstance:
     - target: {fileID: 1591903609983811136, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1503916156}
+      objectReference: {fileID: 1769998361}
     - target: {fileID: 1591903609983811136, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 1591903609983811136, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
+      value: RhythmCollider, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1591903610251492672, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
       propertyPath: m_IsActive
@@ -2697,17 +2705,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 515977502936730007, guid: 2302e506db451ca43bc90dd2b63d5f17, type: 3}
   m_PrefabInstance: {fileID: 1289862913}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1503916156 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1591903609673485611, guid: 286e7d0537695794b9fb8d7ef05f8347, type: 3}
-  m_PrefabInstance: {fileID: 1045194224}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b2e455fc8596914e88b6fb40508af9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1599002629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 207126706741049441, guid: fa9b173ab0f0b664e886672d9815699d, type: 3}
@@ -3017,6 +3014,10 @@ PrefabInstance:
     - target: {fileID: 5856503956853215281, guid: a6b03673a4be4fe40b2efe906f3b9a93, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5856503956853215282, guid: a6b03673a4be4fe40b2efe906f3b9a93, type: 3}
+      propertyPath: hasKeys
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5856503956853215282, guid: a6b03673a4be4fe40b2efe906f3b9a93, type: 3}
       propertyPath: startPosition
