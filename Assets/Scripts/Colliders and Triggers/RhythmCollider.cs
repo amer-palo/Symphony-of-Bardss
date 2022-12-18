@@ -13,8 +13,6 @@ public class RhythmCollider : GameBehaviour
     {
         rhythmUI.SetActive(true);
         Time.timeScale = 0f;
-       
-
     }
     public void gotoRhytm()
     {
@@ -22,7 +20,13 @@ public class RhythmCollider : GameBehaviour
         _Save.SavePosition(exitPoint);
         _SC.FadeOut("Rhythm");
         Time.timeScale = 1f;
+        SceneManager.LoadScene("Rhythm");
     }
 
+    public void Back()
+    {
+        rhythmUI.SetActive(false);
+        Time.timeScale = 1f;
+    }
     
 }

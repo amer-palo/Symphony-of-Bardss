@@ -9,7 +9,7 @@ public class CharacterController2D : GameBehaviour
 {
     Animator anim;
 
-    private const float MOVE_SPEED = 5f;
+    private const float MOVE_SPEED = 2f;
 
     private static CharacterController2D instance;
 
