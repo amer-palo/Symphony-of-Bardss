@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    public GameObject bottlePieceOne, bottlePieceTwo, bottlePieceThree, bottlePieceFour, bottlePieceFive, bottleSlotOne, bottleSlotTwo, bottleSlotThree, bottleSlotFour, bottleSlotFive;
-    public GameObject blueShower, yellowShower, purpleShower, brownShower, greenShower;
+    public GameObject bottlePieceOne, bottlePieceTwo, bottlePieceThree, bottlePieceFour, bottlePieceFive, bottlePieceSix, bottleSlotOne, bottleSlotTwo, bottleSlotThree, bottleSlotFour, bottleSlotFive, bottleSlotSix;
+    public GameObject blueShower, yellowShower, purpleShower, brownShower, greenShower, redShower;
+    public GameObject cupEndUI;
 
-    Vector2 bottleOnePos, bottleTwoPos, bottleThreePos, bottleFourPos, bottleFivePos;
+    Vector2 bottleOnePos, bottleTwoPos, bottleThreePos, bottleFourPos, bottleFivePos, bottleSixPos;
     void Start()
     {
        bottleOnePos = bottlePieceOne.transform.position;
@@ -16,6 +17,7 @@ public class Manager : MonoBehaviour
        bottleThreePos = bottlePieceOne.transform.position;
        bottleFourPos = bottlePieceFour.transform.position;
        bottleFivePos = bottlePieceFive.transform.position;
+       bottleSixPos = bottlePieceSix.transform.position;
     }
 
    public void DragBottleOne()
@@ -41,6 +43,11 @@ public class Manager : MonoBehaviour
     public void DragBottleFive()
     {
         bottlePieceFive.transform.position = Input.mousePosition;
+    }
+
+    public void DragBottleSix()
+    {
+        bottlePieceSix.transform.position = Input.mousePosition;
     }
 
 
@@ -169,6 +176,10 @@ public class Manager : MonoBehaviour
                 bottlePieceFive.transform.position = bottleSlotFive.transform.position;
                 Destroy(bottlePieceFive);
                 Destroy(bottleSlotFive);
+                bottlePieceSix.SetActive(true);
+                bottleSlotSix.SetActive(true);
+                greenShower.SetActive(false);
+                redShower.SetActive(true);
             }
 
             else
@@ -179,6 +190,31 @@ public class Manager : MonoBehaviour
         else
         {
             ResetFive();
+        }
+    }
+
+    public void DropBottleSix()
+    {
+
+        float distance = Vector3.Distance(bottlePieceSix.transform.position, bottleSlotSix.transform.position);
+        if (bottlePieceSix.tag == "Red")
+        {
+            if (distance < 50)
+            {
+                bottlePieceSix.transform.position = bottleSlotSix.transform.position;
+                Destroy(bottlePieceSix);
+                Destroy(bottleSlotSix);
+                cupEndUI.SetActive(true);
+            }
+
+            else
+            {
+                bottlePieceSix.transform.position = bottleSixPos;
+            }
+        }
+        else
+        {
+            ResetSix();
         }
     }
 
@@ -396,6 +432,48 @@ public class Manager : MonoBehaviour
         {
             bottlePieceFive.transform.position = bottleFivePos;
         }
-    }    
+    }
 
+    public void ResetSix()
+    {
+        if (bottlePieceSix.tag == "Red")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Blue")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Yellow")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Orange")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Green")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Purple")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Brown")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+
+        if (bottlePieceSix.tag == "Empty")
+        {
+            bottlePieceSix.transform.position = bottleFivePos;
+        }
+    }
 }
