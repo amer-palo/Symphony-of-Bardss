@@ -6780,6 +6780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 390995725}
+  popupMenu: {fileID: 0}
 --- !u!1 &1421678426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8058,7 +8059,7 @@ PrefabInstance:
     - target: {fileID: 9191660341712848926, guid: 1e2976476d492034a8dccfb4925cb641, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2121962325}
+      objectReference: {fileID: 0}
     - target: {fileID: 9191660341712848926, guid: 1e2976476d492034a8dccfb4925cb641, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: exitSurvive
@@ -8218,7 +8219,7 @@ PrefabInstance:
     - target: {fileID: 9191660343056709675, guid: 1e2976476d492034a8dccfb4925cb641, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2121962325}
+      objectReference: {fileID: 0}
     - target: {fileID: 9191660343056709675, guid: 1e2976476d492034a8dccfb4925cb641, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: gotoSurvive
@@ -10490,17 +10491,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2121962325 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8414281194783085770, guid: e42830e2b14013f4383449da89cd711a, type: 3}
-  m_PrefabInstance: {fileID: 759100348}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef69890458df33346990475625ef26e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2121962327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8414281194783085772, guid: e42830e2b14013f4383449da89cd711a, type: 3}
