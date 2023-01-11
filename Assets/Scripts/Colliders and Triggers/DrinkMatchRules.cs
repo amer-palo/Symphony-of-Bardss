@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SurviveCollider : GameBehaviour
+public class DrinkMatchRules : GameBehaviour
 {
-    public GameObject surviveUI;
+    public GameObject drinkUI;
     public GameObject player;
     public Transform exitPoint;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       surviveUI.SetActive(true);
+        drinkUI.SetActive(true);
         Time.timeScale = 0f;
-        
     }
-    public void gotoSurvive()
+    public void gotoDrink()
     {
+        Debug.Log("button hit");
         _Save.SavePosition(exitPoint);
-        _SC.FadeOut("Survive The Night Game");
+        _SC.FadeOut("MatchTheDrinkGame");
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Survive The Night Game");
+        SceneManager.LoadScene("MatchTheDrinkGame");
     }
 
-    public void exitSurvive()
+    public void Back()
     {
-        
-        surviveUI.SetActive(false);
+        drinkUI.SetActive(false);
         Time.timeScale = 1f;
     }
+
 }
