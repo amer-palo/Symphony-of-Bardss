@@ -7,6 +7,6 @@ public class BackToTavern : MonoBehaviour
 {
     public void BackToTavernScene()
     {
-       
+        SceneManager.LoadScene("Tavern 3.0");
     }
 }
