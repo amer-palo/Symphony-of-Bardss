@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Journal : MonoBehaviour
 {
+    public GameObject journal;
+
     public GameObject BromText1;
     public GameObject BromText2;
     public GameObject BromText3;
@@ -21,6 +23,8 @@ public class Journal : MonoBehaviour
     public GameObject AdenText3;
 
     public ItemSlot slot;
+    public ItemSlot slot2;
+    public ItemSlot slot3;
 
 
     public GameObject AgathaPanel;
@@ -35,10 +39,12 @@ public class Journal : MonoBehaviour
     public bool aden = false;
     public bool jon = false;
 
+    public GameObject menuButton;
+    public GameObject pauseMenu;
 
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -58,6 +64,8 @@ public class Journal : MonoBehaviour
     {
         AgathaPanel.SetActive(true);
         agatha = true;
+        menuButton.SetActive(true);
+        pauseMenu.SetActive(false);
     }
     public void NextArchive()
     {
@@ -109,17 +117,23 @@ public class Journal : MonoBehaviour
     }
 
 
+    public void Exit()
+    {
+        journal.SetActive(false);
+    }
+
     public void AgathaArchive()
     {
         if (slot.option1.tag == "Agatha")
+
         {
             AgathaText1 = slot.option1;
         }
-        if (slot.option2.tag == "Agatha")
+        if (slot2.option2.tag == "Agatha")
         {
             AgathaText2 = slot.option2;
         }
-        if (slot.option3.tag == "Agatha")
+        if (slot3.option3.tag == "Agatha")
         {
             AgathaText3 = slot.option3;
         }
@@ -130,11 +144,11 @@ public class Journal : MonoBehaviour
         {
             BromText1 = slot.option1;
         }
-        if (slot.option2.tag == "Brom")
+        if (slot2.option2.tag == "Brom")
         {
             BromText2 = slot.option2;
         }
-        if (slot.option3.tag == "Brom")
+        if (slot3.option3.tag == "Brom")
         {
             BromText3 = slot.option3;
         }
@@ -145,11 +159,11 @@ public class Journal : MonoBehaviour
         {
             AdenText1 = slot.option1;
         }
-        if (slot.option2.tag == "Aden")
+        if (slot2.option2.tag == "Aden")
         {
             AdenText2 = slot.option2;
         }
-        if (slot.option3.tag == "Aden")
+        if (slot3.option3.tag == "Aden")
         {
             AdenText3 = slot.option3;
         }
@@ -160,11 +174,11 @@ public class Journal : MonoBehaviour
         {
             JonText1 = slot.option1;
         }
-        if (slot.option2.tag == "Jon")
+        if (slot2.option2.tag == "Jon")
         {
             JonText2 = slot.option2;
         }
-        if (slot.option3.tag == "Jon")
+        if (slot3.option3.tag == "Jon")
         {
             JonText3 = slot.option3;
         }

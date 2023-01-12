@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject player;
     public GameObject NPC;
     public Rigidbody2D rB;
+    public GameObject journal;
 
     public bool bardSpeak = false;
     //public PlayerState state;
@@ -132,7 +133,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         questionsPanel.SetActive(false);
         dialogueText.text = "";
-        //journal.SetActive(true);
+        journal.SetActive(true);
 
 
         //Unfreezes the player and changes the player state to play

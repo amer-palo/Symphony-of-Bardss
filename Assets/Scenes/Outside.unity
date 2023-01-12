@@ -1458,6 +1458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4998869713825519499, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4998869713881201757, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1554,6 +1558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Journal Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 4998869714404992970, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4998869714737221464, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1574,11 +1582,28 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4998869715426037199, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998869715578207664, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 390995725}
+    - target: {fileID: 4998869715578207664, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+      propertyPath: menuButton
+      value: 
+      objectReference: {fileID: 390995726}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
 --- !u!1 &390995725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4998869715369385681, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
+  m_PrefabInstance: {fileID: 390995724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &390995726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4998869713825519499, guid: 13f255a28e45f154daad9db0512ab9ef, type: 3}
   m_PrefabInstance: {fileID: 390995724}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &399233746
@@ -6780,6 +6805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 390995725}
+  popupMenu: {fileID: 0}
 --- !u!1 &1421678426
 GameObject:
   m_ObjectHideFlags: 0
