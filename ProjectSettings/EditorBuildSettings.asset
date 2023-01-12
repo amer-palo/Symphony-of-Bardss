@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tavern 3.0.unity
     guid: d92d1f2ee036bc9428a7a015d02ee96a
+  - enabled: 1
+    path: Assets/Scenes/MatchTheDrinkGame.unity
+    guid: ba391dd001d67374285398635855da35
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2ea68e328b9896345b249167d5c7c22b, type: 2}
