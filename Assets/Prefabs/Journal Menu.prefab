@@ -7090,7 +7090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4998869715426037198
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7986,6 +7986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   journal: {fileID: 4998869715578207669}
+  archive: {fileID: 0}
   BromText1: {fileID: 4998869714752955097}
   BromText2: {fileID: 4998869714909260525}
   BromText3: {fileID: 4998869714006235363}
@@ -9154,7 +9155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4998869715793954191
 RectTransform:
   m_ObjectHideFlags: 0

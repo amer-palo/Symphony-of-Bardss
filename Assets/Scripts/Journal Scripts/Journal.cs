@@ -5,6 +5,7 @@ using UnityEngine;
 public class Journal : MonoBehaviour
 {
     public GameObject journal;
+    public GameObject archive;
 
     public GameObject BromText1;
     public GameObject BromText2;
@@ -63,6 +64,7 @@ public class Journal : MonoBehaviour
     public void LoadArchives()
     {
         AgathaPanel.SetActive(true);
+        archive.SetActive(true);
         agatha = true;
         menuButton.SetActive(true);
         pauseMenu.SetActive(false);
@@ -120,6 +122,11 @@ public class Journal : MonoBehaviour
     public void Exit()
     {
         journal.SetActive(false);
+        archive.SetActive(false);
+        AgathaPanel.SetActive(false);
+        BromPanel.SetActive(false);
+        AdenPanel.SetActive(false);
+        JonPanel.SetActive(false);
     }
 
     public void AgathaArchive()
