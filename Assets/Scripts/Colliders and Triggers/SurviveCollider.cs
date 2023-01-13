@@ -18,9 +18,9 @@ public class SurviveCollider : GameBehaviour
     public void gotoSurvive()
     {
         _Save.SavePosition(exitPoint);
-        _SC.FadeOut("Survive The Night Game");
+        _SC.FadeOut("Survive The Night Game 2.0");
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Survive The Night Game");
+        SceneManager.LoadScene("Survive The Night Game 2.0");
     }
 
     public void exitSurvive()
