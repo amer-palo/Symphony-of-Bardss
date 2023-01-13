@@ -57,6 +57,7 @@ public class CharacterController2D : GameBehaviour
                 moveY = +1f;
                 direction = Direction.Up;
                 anim.SetInteger("Walk", 1);
+                Debug.Log("Up");
             }
             else if (Input.GetKey(KeyCode.S))
             {

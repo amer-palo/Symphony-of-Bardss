@@ -7,7 +7,7 @@ public class MainMenu : GameBehaviour
 {
     public void PlayGame()
     {
-        _SC.FadeOut("Outside");
+        _SC.FadeOut("Outside 2.0");
     }
 
     public void QuitGame()

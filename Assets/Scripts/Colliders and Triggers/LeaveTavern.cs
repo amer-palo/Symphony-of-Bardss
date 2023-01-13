@@ -9,7 +9,7 @@ public class LeaveTavern : GameBehaviour
     public Transform exitPoint;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _SC.FadeOut("Outside");
+        _SC.FadeOut("Outside 2.0");
         _Save.SavePosition(exitPoint);
 
     }
