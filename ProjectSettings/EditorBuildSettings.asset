@@ -9,17 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: d777ebdde8b79c5488d3193f87cffaf1
   - enabled: 1
-    path: Assets/Scenes/Outside.unity
-    guid: 356ef55312f51cb45a261a0ec02f5c36
-  - enabled: 0
-    path: Assets/Scenes/Tavern.unity
-    guid: ca4005df0b4b0d840a800410cb99292c
+    path: Assets/Scenes/Outside 2.0.unity
+    guid: 313a2a510b7ca9147b21fdab7f5f92ef
+  - enabled: 1
+    path: Assets/Scenes/Survive The Night Game 2.0.unity
+    guid: 108bef615d33f6643b64c0e90241afb7
   - enabled: 1
     path: Assets/Scenes/Rhythm.unity
     guid: a7efac3f0da73e7439004acd29203987
-  - enabled: 1
-    path: Assets/Scenes/Survive The Night Game.unity
-    guid: abcaaa293b9bb834dafd322bca0fea60
   - enabled: 1
     path: Assets/Scenes/Tavern 3.0.unity
     guid: d92d1f2ee036bc9428a7a015d02ee96a
